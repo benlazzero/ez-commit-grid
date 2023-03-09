@@ -6,7 +6,7 @@ CODEBANK[2]=`cat Maybe-Fake-Code.js`
 
 RAND=`shuf -i 0-2 -n 1`
 
-${CODEBANK[RAND]} >> Real-Code.js
+echo ${CODEBANK[RAND]} >> Real-Code.js
 
 git add .
 git commit -m 'super important commit'
